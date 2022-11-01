@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>마블뉴스</title>
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        ul li{
+            list-style: none;
+            text-align: center;
+        }
+        a{
+            text-decoration: none;
+        }
+         .wrap {
+            background-color:black;
+            width: 100%;
+            height: 100%;
+            position: relative;
+
+         } 
+         header{
+            width: 100%;
+            height: 60px;
+            background-color: rgb(217, 56, 49);
+            text-align: center;
+            line-height: 60px;
+            color: white;
+            position: fixed;
+            top: 0;
+            z-index: 9;
+
+         }
+        /* 슬라이드 부분 */
+
+        .slide_wrap {
+            margin-top: 60px;
+            width: 70%;
+            /* height: 600px ; */
+            margin: 0 auto;
+        }
+        .main{
+            width:100%; 
+            height:500px; 
+            overflow:hidden; 
+            position:relative;
+            margin: 0 auto;
+        }
+
+        .slide{
+            width:5000px; 
+            height:500px; 
+            position:absolute; 
+            left:0; 
+            top:0;
+        }
+
+        .slide li{
+            float:left;
+         }
+
+         .slide li:hover{opacity: 0.7;}
+
+         .slide li img {
+            max-width: 100%;
+            display: block;
+            margin: 0 auto;
+         }
+        /* 슬라이드 부분 */
+
+        .hot {
+            /* background-color: coral; */
+            width: 70%;
+            height: 150vw;
+            display: block;
+            margin: 0 auto;
+            color: white;
+        }
+
+        .hot_title {
+            background-color: black;
+            color: white;
+            width: 100%;
+            text-align: center;
+            padding: 20px 0px;
+            font-size: 0.7rem;
+
+        }
+
+        .hot_con {
+             background-color: aqua;
+             width: 100%;
+
+
+             
+        }
+        .hot_list1 {
+             width: 80%;
+             background-color: pink;
+             height: 100%;
+             margin: 0 auto;
+        }
+
+        .hot_list1 li {
+             width: 45%;
+             /* height: 30%; */
+             float: left;            
+            margin-top: 30px;
+        margin-bottom: 30px;
+        
+        }
+    
+
+        .hot_list1 li:nth-child(2n){
+            float: right;
+        }
+
+        .hot_list1 li a {
+            color: white;
+            background-color: black;
+            text-align: center;
+            display: inline-block;
+            font-size: 0.7rem;
+        }
+
+        .hot_list1 li img:hover {
+          opacity: 0.6;
+
+        }
+        .hot_list1 li a:hover {
+            color: black;
+            background-color: white;
+        }
+    
+       footer{
+        width: 100%;
+        height: 200px;
+        background-color:  rgb(217, 56, 49);
+        position: relative;
+        color: white;
+        text-align: center;
+        line-height: 200px;
+        bottom: 0;
+        display: block;
+       }
+
+       .event {
+            width: 70%;
+            height: 15s0vw;
+            margin: 0 auto;
+
+       }
+       .event_title {
+            background-color: black;
+            color: white;
+            width: 100%;
+            text-align: center;
+            padding: 20px 0px;
+            font-size: 0.7rem;
+            display: inline-block;
+        }
+
+        .event_title p{
+            color: white;
+        }
+       
+        .event_con {
+            background-color: rebeccapurple;
+            width: 100%;
+            height: 40vw;
+        }
+
+        .event_con a {
+            display: inline-block;
+            width: 100%;
+
+       }
+
+    </style>
+
+</head>
+<body>
+
+<!-- 헤더  -->
+ <header>HEADER</header>
+  
+ <div class="wrap">
+
+<!-- 뉴스 슬라이드 -->
+        <section class="slide_wrap">
+
+            <div class="main">
+                <ul class="slide">
+                    <li><a href="#"><img src="images/marvel1.jpeg" alt="event1" width="1000px"></a></li>
+                    <li><a href="#"><img src="images/marvel2.jpeg" alt="event2" width="1000px"></a></li>
+                    <li><a href="#"><img src="images/marvel3.jpeg" alt="event3" width="1000px"></a></li>
+                    <li><a href="#"><img src="images/marvel4.jpeg" alt="event4" width="1000px"></a></li>
+                    <!-- <li><a href="#"><img src="images/img5.jpg" alt="event5" width="1000px"></a></li> -->
+                </ul>
+            </div> 
+
+        </section>
+
+<!-- 최신 뉴스 -->
+        <section class="hot">
+          <div class="hot_title">
+            <p><h2>마블뉴스</h2>최근 소식을 만나보세요.</p>
+        </div>
+          <div class="hot_con">
+            <ul class="hot_list1">
+                <li><a href="#"><img src="images/hot1.jpeg" alt="hot2" width="100%"><h3>앤트맨과 와스프 : 퀀투마니아</h3>23.02.17</a></li>
+                <li><a href="#"><img src="images/hot2.jpeg" alt="hot1" width="100%"><h3>블랙팬서 : 와칸다 포에버</h3>22.11.11</a></li>
+                <li><a href="#"><img src="images/hot1.jpeg" alt="hot2" width="100%"><h3>앤트맨과 와스프 : 퀀투마니아</h3>23.02.17</a></li>
+                <li><a href="#"><img src="images/hot2.jpeg" alt="hot1" width="100%"><h3>블랙팬서 : 와칸다 포에버</h3>22.11.11</a></li>
+                <li><a href="#"><img src="images/hot1.jpeg" alt="hot2" width="100%"><h3>앤트맨과 와스프 : 퀀투마니아</h3>23.02.17</a></li>
+                <li><a href="#"><img src="images/hot2.jpeg" alt="hot1" width="100%"><h3>블랙팬서 : 와칸다 포에버</h3>22.11.11</a></li>
+                <li><a href="#"><img src="images/hot2.jpeg" alt="hot1" width="100%"><h3>블랙팬서 : 와칸다 포에버</h3>22.11.11</a></li>
+                <li><a href="#"><img src="images/hot2.jpeg" alt="hot1" width="100%"><h3>블랙팬서 : 와칸다 포에버</h3>22.11.11</a></li>
+            
+            </ul>
+
+          </div>
+        </section>
+
+        <section class="event">
+            <div class="event_title">
+                <p><h2>마블이벤트</h2>지금 회원가입하고 다양한 혜택을 받아보세요!</p>
+            </div>
+            <div class="event_con">
+                <a href="#"><img src="images/marvel1.jpeg" alt="회원가입" width="100%"></a>
+            </div>
+        </section>
+
+    </div>
+    <!-- 풋터 -->
+  <footer>FOOTER</footer>
+
+
+    <!-- 슬라이드 js -->
+
+    <script>
+    setInterval(function() {
+    $(".slide").css({left:"-1000px",transition:"all 0.5s"});  
+   
+    setTimeout(function() {
+    $(".main li:eq(0)").appendTo(".slide");
+    $(".slide").css({left:"0",transition:"none"});
+    },500);
+    },3000); 
+
+    </script>
+</body>
+</html>

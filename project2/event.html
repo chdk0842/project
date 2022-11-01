@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이벤트창</title>
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+         .wrap {
+            background-color: white;
+            width: 100%;
+         } 
+         header{
+            width: 100%;
+            height: 60px;
+            background-color: rgb(217, 56, 49);
+            text-align: center;
+            line-height: 60px;
+            color: white;
+            position: fixed;
+            top: 0;
+            z-index: 9;
+            
+
+         }
+
+         footer{
+        width: 100%;
+        height: 200px;
+        background-color:  rgb(217, 56, 49);
+        position: relative;
+        color: white;
+        text-align: center;
+        line-height: 200px;
+        bottom: 0;
+        display: block;;
+
+        }
+
+        /* 게시판 */
+        /* view.html */
+
+
+.board_view {
+    width: 70%;
+    margin: 100px auto;
+}
+
+/* .board_view_wrap{margin-top: 30px;} */
+
+.board_view .title {
+    padding: 20px 15px;
+    border-bottom: 1px dashed #ddd;
+    font-size: 1.5rem;
+}
+
+.board_view .info {
+    padding: 15px;
+    border-bottom:1px solid #999 ;
+    font-size: 0;
+
+}
+
+.board_view .info dl {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+}
+
+.board_view .info dl:first-child {
+    padding-left: 0;
+}
+
+.board_view .info dl::before {
+    content: "";
+    position: absolute;
+    top:1px;
+    left: 0;
+    display: block;
+    width: 1px;
+    height: 13px;
+    background-color: #ddd;
+}
+
+.board_view .info dl:first-child::before {
+    display: none;
+}
+
+
+.board_view .info dl dt,
+.board_view .info dl dd {
+    display: inline-block;
+    font-size: 1.2rem;
+}
+
+.board_view .info dl dd {
+    margin-left: 10px;
+    color: #777;
+}
+
+.board_view .cont {
+    padding: 15px;
+    font-size: 1.1rem;
+    line-height: 160%;
+}
+
+.bt_wrap {
+   margin: 100px auto;
+   width: 30%;
+}
+
+.bt_wrap a {
+    display: inline-block;
+    text-align: center;
+    color: white;
+    background-color: black;
+    border-radius: 5px;
+    text-decoration: none;
+    padding: 5% 10%;
+
+}
+
+.bt_wrap a:nth-last-child(1) {
+    float: right;
+}
+
+.bt_wrap a:hover{
+    background-color: white;
+    color: rgb(217, 56, 49);
+    font-weight: bold;
+}
+        /* 게시판 */
+    </style>
+</head>
+<body>
+     <!-- 헤더 -->
+     <header>HEADER</header>
+
+    <div class="wrap">
+        <div class="board_wrap">
+
+                <div class="board_view_wrap">
+                    <div class="board_view">
+                        <div class="title">마블 이벤트</div>
+                        <div class="info">
+                           
+                            <dl>
+                                <dt>작성자</dt>
+                                <dd>관리자</dd>
+                            </dl>
+                            <dl>
+                                <dt>작성일</dt>
+                                <dd>2022.10.31</dd>
+                            </dl>
+                            <dl>
+                                <dt>조회</dt>
+                                <dd>3,528</dd>
+                            </dl>
+                        </div>
+                        <div class="cont">
+                            글 내용이 들어갑니다. 글 내용이 들어갑니다.<br />
+                            글 내용이 들어갑니다.  글 내용이 들어갑니다.<br />
+                            글 내용이 들어갑니다.  글 내용이 들어갑니다.<br />
+                            글 내용이 들어갑니다. 글 내용이 들어갑니다. <br />
+                            글 내용이 들어갑니다.  글 내용이 들어갑니다.<br />
+                            글 내용이 들어갑니다.  글 내용이 들어갑니다.<br />
+                            글 내용이 들어갑니다.  글 내용이 들어갑니다.<br />
+                            글 내용이 들어갑니다.  글 내용이 들어갑니다.<br />
+                            글 내용이 들어갑니다.  글 내용이 들어갑니다.<br />
+                           
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bt_wrap">
+                    <a href="./index.html">뒤로가기</a>
+                    <a href="#">혜택받기</a>
+                </div>
+
+        </div>
+
+
+        <!-- 풋터 -->
+        <footer>FOOTER</footer>
+    </div>
+</body>
+</html>
